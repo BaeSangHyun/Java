@@ -30,6 +30,9 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\206-001\Desktop\민정과제\1.28자전거 대여\자전거대여점_1.28.zip"/>
+			<item value="C:\Users\206-001\Desktop\민정과제\1.27비행기\비행기좌석예약_1.27.zip"/>
+			<item value="C:\Users\206-001\Desktop\민정과제\1.27영화관\영화관_1.27.zip"/>
 			<item value="C:\Users\206-001\Desktop\민정과제\1.26PhoneBook\전화번호부_1.26.zip"/>
 		</list>
 	</section>
