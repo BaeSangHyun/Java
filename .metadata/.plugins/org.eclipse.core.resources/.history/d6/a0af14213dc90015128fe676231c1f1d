@@ -13,9 +13,9 @@ import java.util.Scanner;
  * Update : 수정하기
  * Delete : 삭제하기
  * =======
- * CRUD라고 한다. 
+ * CRUD라고 한다. 씨알유디
  * 
- * @author jmj
+ * @author 206-020
  *
  */
 public class PhoneBookBiz {
@@ -48,6 +48,9 @@ public class PhoneBookBiz {
 		String searchName = "";
 		String deleteName = "";
 		
+		
+		//PhoneInfoVO phoneInfo = null;
+		
 		//shift+tab tab당기기
 		while( true ) {
 			this.phoneInfo = new PhoneInfoVO();
@@ -63,23 +66,22 @@ public class PhoneBookBiz {
 			}
 			
 			if( choice == 1 ) {
-				phoneInfo = new PhoneInfoVO();
 				System.out.println("이름과 전화번호 나이 주소를 순서대로 입력하세요.");
-		
+				phoneInfo = new PhoneInfoVO();
 				String name = input.next();
 				phoneInfo.setName( name );
 				phoneInfo.setPhoneNumber( input.next() );
 				phoneInfo.setAge( input.nextInt() );
 				phoneInfo.setAddress( input.nextLine() ); // nextInt다음에 나와서 엔터치면 무시된다.
-				phoneInfo.setAddress( input.nextLine() ); // 그래서 똑같은거 또 넣음...
-
+				phoneInfo.setAddress( input.nextLine() ); // 그래서 똑같은거 또 넣음... 다른방법 모르겠다......
+					
 				this.addNewPhoneBookInfo(phoneInfo);
 			}
 			else if ( choice == 2 ) {
 				while(true){
 					System.out.println("검색할 이름을 입력하세요.");
 					searchName = input.next();
-					if(checkScanner("^[가-힣a-zA-Z]*$", searchName)){ // 정규표현식 이용
+					if(checkScanner("^[가-힣a-zA-Z]*$", searchName)){
 					}
 					else{
 						if (this.result = this.getPhoneInfoByName(searchName) ){
@@ -169,6 +171,7 @@ public class PhoneBookBiz {
 				return true;
 			}
 		}
+		//리스트에 검색한 결과가 없을 때에는 새로운 인스턴스를 만들어 리턴한다.
 		return false;
 	}
 	
@@ -295,6 +298,7 @@ public class PhoneBookBiz {
 				phoneInfo.setName(newName);
 				System.out.println("바꿨다");
 				return  phoneInfo;
+				//phoneInfoList.set(this.phoneInfoList.indexOf(oldName), phoneInfo.getName());
 			}
 			else {
 				System.out.println("없다.");

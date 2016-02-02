@@ -79,7 +79,7 @@ public class PhoneBookBiz {
 				while(true){
 					System.out.println("검색할 이름을 입력하세요.");
 					searchName = input.next();
-					if(checkScanner("^[가-힣a-zA-Z]*$", searchName)){ // 정규표현식 이용
+					if(checkScanner("^[가-힣a-zA-Z]*$", searchName)){
 					}
 					else{
 						if (this.result = this.getPhoneInfoByName(searchName) ){
@@ -295,6 +295,7 @@ public class PhoneBookBiz {
 				phoneInfo.setName(newName);
 				System.out.println("바꿨다");
 				return  phoneInfo;
+				//phoneInfoList.set(this.phoneInfoList.indexOf(oldName), phoneInfo.getName());
 			}
 			else {
 				System.out.println("없다.");

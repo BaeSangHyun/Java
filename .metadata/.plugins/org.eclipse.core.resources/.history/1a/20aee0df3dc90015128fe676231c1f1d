@@ -295,6 +295,7 @@ public class PhoneBookBiz {
 				phoneInfo.setName(newName);
 				System.out.println("바꿨다");
 				return  phoneInfo;
+				//phoneInfoList.set(this.phoneInfoList.indexOf(oldName), phoneInfo.getName());
 			}
 			else {
 				System.out.println("없다.");
