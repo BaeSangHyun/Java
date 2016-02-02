@@ -169,8 +169,6 @@ public class BicycleBiz {
 			customer.setMoney(money);
 			customer.setType(type.getType());
 			type.rent(); // 보급형의 count를 1 줄인다.
-			//customer.getBicycleList().add(type);
-			//customer.setLowCount(); // 고객에게 보급형 한대 대여 추가
 			System.out.println(name + ": " + type.getType() + "자전거를 한대 대여하셨습니다.");
 			System.out.println("대여한 시간 : " + curDate); // 대여한 시간 출력
 		}		

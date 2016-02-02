@@ -86,7 +86,7 @@ public class GoHomeManage {
 	}
 	
 	/**
-	 * 예약!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	 * 예약
 	 */
 	public void reservationSeats() {
 		while(true){
@@ -113,11 +113,11 @@ public class GoHomeManage {
 			}
 			else{
 				if (ischeckSeat()){
-					System.out.println("이미 예약된 자리야");
+					System.out.println("이미 예약된 자리입니다.");
 					printSeats();
 				}
 				else {
-					// 안된좌석이라면 예약 궈궈
+					// 안된좌석이라면 예약
 					List<String> selectedSeats = getSeats().get(this.row-1);
 					selectedSeats.set(this.col-1, "●");
 					

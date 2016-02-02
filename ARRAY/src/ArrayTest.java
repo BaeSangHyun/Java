@@ -12,14 +12,12 @@ public class ArrayTest {
 		list[3] = "남준호";
 		list[4] = "황성재";
 		
-		
 		/*int index = 0;
 		System.out.println(list[index++]);
 		System.out.println(list[index++]);
 		System.out.println(list[index++]);
 		System.out.println(list[index++]);
 		System.out.println(list[index++]);*/
-		
 		
 		for ( int i = 0; i < 5; i++) {
 			System.out.println(list[i]);

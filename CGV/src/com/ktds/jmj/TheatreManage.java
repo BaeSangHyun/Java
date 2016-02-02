@@ -68,7 +68,7 @@ public class TheatreManage {
 	}
 	
 	/**
-	 * 예약!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	 * 예약
 	 */
 	public void reservationSeats() {
 		//seatNum 뽑아내기
@@ -77,8 +77,7 @@ public class TheatreManage {
 		System.out.println("10칸씩 5줄의 좌석있다.");
 		
 		String seatNum = inputScanner();
-		
-		
+				
 		seatNum = seatNum.trim();
 		
 		seatNum = seatNum.replace(" ", ""); 
@@ -99,14 +98,14 @@ public class TheatreManage {
 			List<String> checkList = getSeats().get(row-1);
 			for ( String s : checkList ){
 				if (checkList.get(col-1).equals("■") ){
-					System.out.println("이미 예약된 자리야");
+					System.out.println("이미 예약된 자리입니다.");
 					printSeats();
 					return; // 되었다면 return으로 함수빠져나가기?
 				}
 			}
 		}
 		
-		// 안된좌석이라면 예약 궈궈
+		// 안된좌석이라면 예약 
 		List<String> selectedSeats = getSeats().get(row-1);
 		selectedSeats.set(col-1, "■");
 		
@@ -115,7 +114,7 @@ public class TheatreManage {
 		
 	}
 	
-	//범위안에 입력받은 좌석 숫자가 맞나
+	// 범위안에 입력받은 좌석 숫자가 맞나
 	public boolean checkRowCol (int num){
 		if ( num <= 0 || num >= 10){
 			return true;

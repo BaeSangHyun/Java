@@ -12,7 +12,6 @@ public class Bicycle {
 		Bicycle bicycle = new Bicycle();
 		bicycle.start();
 
-
 	}
 
 }
