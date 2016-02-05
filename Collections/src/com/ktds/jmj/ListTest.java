@@ -4,12 +4,13 @@ package com.ktds.jmj;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class ListTest {
 	
 	public void start(){
 		//Ctrl + Shift + O import를 자동으로 시켜주는 것
 		List<String> list = new ArrayList<String>();
-		
+
 		list.add("전민정");
 		list.add("김장호");
 		list.add("황성재");
